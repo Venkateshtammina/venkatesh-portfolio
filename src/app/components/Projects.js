@@ -35,7 +35,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div key={project.id} className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-start">
-              <div className="text-4xl font-bold text-gray-400 mr-6">{project.id}.</div>
+                <div className="text-4xl font-bold text-gray-400 mr-6">{project.id}.</div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">{project.title}</h3>
                   <p className="text-gray-600 mb-4">{project.description}</p>
@@ -52,8 +52,6 @@ const Projects = () => {
                     {project.image && (
                       <a 
                         href={project.image} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
                         className="flex items-center text-blue-600 hover:underline"
                       >
                         <span>View Image</span>
@@ -63,8 +61,6 @@ const Projects = () => {
                     {project.githubLink && (
                       <a 
                         href={project.githubLink} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
                         className="flex items-center text-gray-700 hover:underline"
                       >
                         <FiGithub className="mr-1 w-4 h-4" />
@@ -74,8 +70,6 @@ const Projects = () => {
                     {project.liveLink && (
                       <a 
                         href={project.liveLink} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
                         className="flex items-center text-green-600 hover:underline"
                       >
                         <FiExternalLink className="mr-1 w-4 h-4" />
