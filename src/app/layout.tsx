@@ -1,17 +1,22 @@
-// app/layout.js
-import './styles/globals.css';
-import Navbar from './components/Navbar';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
 
-export const metadata = {
-  title: 'Venkatesh T | Portfolio',
-  description: 'AI & ML Engineer | Full-Stack Developer',
+const inter = Inter({ subsets: ['latin'] });
+
+export const metadata: Metadata = {
+  title: 'Venkatesh T - Portfolio',
+  description: 'Portfolio of Venkatesh T, AI & ML Engineer and Full Stack Developer',
 };
 
-export default function RootLayout({ children }) {
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
+      <body className={inter.className}>
         {children}
       </body>
     </html>
