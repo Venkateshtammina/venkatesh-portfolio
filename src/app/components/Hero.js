@@ -12,7 +12,7 @@ export default function Hero() {
         {/* Profile Picture */}
         <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500 shadow-xl">
           <Image
-            src={imageError ? '/placeholder-profile.jpg' : '/profile.jpg'}
+            
             alt="Venkatesh T"
             fill
             className="object-cover"
