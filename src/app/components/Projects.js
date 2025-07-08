@@ -13,7 +13,7 @@ const Projects = () => {
     {
       id: 2,
       title: "MedTrack",
-      description: "Comprehensive medicine inventory management system with expiry alerts, helping pharmacies reduce waste by 40% through timely notifications and efficient stock management.",
+      description: "Comprehensive medicine inventory management system with expiry alerts, helping reduce medicine waste through timely notifications and efficient stock management.",
       tech: ["MongoDB", "Express", "React", "Node.js", "JWT Authentication"],
       image: "/medtrack.png",
       githubLink: "https://github.com/Venkateshtammina/MedTrack-frontend",
