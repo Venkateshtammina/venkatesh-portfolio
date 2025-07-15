@@ -1,18 +1,55 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  --color-primary: #000;
-  --color-secondary: #fff;
-  /* Add your custom theme variables here */
+:root {
+  --foreground-rgb: 15, 23, 42;  /* Slate-900 for dark text */
+  --background-start-rgb: 255, 251, 235;  /* Amber-50 */
+  --background-end-rgb: 254, 243, 199;    /* Amber-100 */
 }
 
-/* Custom base styles */
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      135deg,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb))
+    );
+  min-height: 100vh;
+}
+
+/* Smooth color transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
 @layer base {
   html {
     @apply antialiased;
-  }
-  
-  body {
-    @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-white;
   }
 }
