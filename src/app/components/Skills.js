@@ -55,49 +55,27 @@ export default function Skills() {
         { name: "Java" },
         { name: "Python" },
         { name: "C/C++" },
-        { name: "JavaScript/TypeScript" },
         { name: "SQL" }
       ]
     },
     {
-      category: "Frontend",
+      category: "Web Development",
       icon: FiLayers,
       skills: [
-        { name: "React.js" },
-        { name: "Next.js" },
+        
       
         
-        { name: "HTML5/CSS3" }
+      { name: "HTML5/CSS3" },
+      { name: "Node.js" },
+      { name: "RESTful APIs" },
       ]
     },
-    {
-      category: "Backend",
-      icon: FiServer,
-      skills: [
-        { name: "Node.js" },
-        { name: "Express" },
-        { name: "RESTful APIs" },
-       
-        { name: "Django" }
-      ]
-    },
-    {
-      category: "AI/ML",
-      icon: FiCpu,
-      skills: [
-        { name: "TensorFlow" },
-        { name: "PyTorch" },
-        { name: "Scikit-learn" },
-        
-        { name: "Pandas" },
-      { name: "NumPy" }
-      ]
-    },
+    
     {
       category: "Database",
       icon: FiDatabase,
       skills: [
-        { name: "MongoDB" },
+        
         { name: "PostgreSQL" },
         { name: "MySQL" }
         
@@ -110,7 +88,7 @@ export default function Skills() {
         { name: "Git & GitHub" },
         
   
-        { name: "Linux" }
+      
       ]
     }
   ];
