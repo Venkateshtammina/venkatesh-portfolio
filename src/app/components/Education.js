@@ -13,35 +13,9 @@ const educationHistory = [
     detail: 'CGPA: 8.8',
     icon: FiBookOpen,
     achievements: [
-      'Specialized in AI/ML with hands-on projects',
-      'Coursework in Deep Learning, NLP, and Computer Vision',
-      'Active participant in tech workshops and hackathons'
-    ]
-  },
-  {
-    id: 2,
-    institution: 'YJR PU College',
-    degree: 'Pre-University (PCMB)',
-    year: '2019 - 2021',
-    detail: 'Percentage: 97.5%',
-    icon: FiBook,
-    achievements: [
-      'Excelled in Physics, Chemistry, Mathematics, and Biology',
-      'Developed strong analytical and problem-solving skills',
-      'Participated in science exhibitions and competitions'
-    ]
-  },
-  {
-    id: 3,
-    institution: 'Tejarsha High School',
-    degree: 'Secondary School (SSLC)',
-    year: '2018 - 2019',
-    detail: 'Percentage: 91.6%',
-    icon: FiAward,
-    achievements: [
-      'Consistent academic excellence',
-      'Active in extracurricular activities',
-      'Developed strong foundation in core subjects'
+      'Built a foundation in artificial intelligence, machine learning, and data analysis',
+      'Applied technical skills through hands-on projects and practical learning',
+      'Graduated with a CGPA of 8.8'
     ]
   },
 ];

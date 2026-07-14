@@ -1,4 +1,5 @@
 'use client';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import SectionContainer from './SectionContainer';
 import { FiMail, FiGithub, FiLinkedin, FiPhone, FiMapPin } from 'react-icons/fi';
@@ -101,6 +102,15 @@ const ContactCard = ({ item, index }) => {
 };
 
 export default function Contact() {
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const subject = encodeURIComponent(`Portfolio enquiry from ${form.name}`);
+    const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`);
+    window.location.href = `mailto:venkatesht1243@gmail.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <SectionContainer id="contact" className="bg-amber-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -124,6 +134,17 @@ export default function Contact() {
             <ContactCard key={item.id} item={item} index={index} />
           ))}
         </div>
+
+        <motion.form initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} onSubmit={handleSubmit} className="max-w-3xl mx-auto mb-16 rounded-2xl bg-white border border-slate-100 shadow-sm p-6 md:p-8">
+          <h3 className="text-2xl font-bold text-slate-800 mb-2">Send a message</h3>
+          <p className="text-slate-600 mb-6">Your default email app will open with your message ready to send.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <label className="text-sm font-medium text-slate-700">Name<input required value={form.name} onChange={(event) => setForm({ ...form, name: event.target.value })} className="mt-2 w-full rounded-lg border border-slate-200 px-4 py-3 outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-100" /></label>
+            <label className="text-sm font-medium text-slate-700">Email<input required type="email" value={form.email} onChange={(event) => setForm({ ...form, email: event.target.value })} className="mt-2 w-full rounded-lg border border-slate-200 px-4 py-3 outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-100" /></label>
+          </div>
+          <label className="text-sm font-medium text-slate-700">Message<textarea required rows={5} value={form.message} onChange={(event) => setForm({ ...form, message: event.target.value })} className="mt-2 w-full rounded-lg border border-slate-200 px-4 py-3 outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-100" /></label>
+          <button type="submit" className="mt-5 px-6 py-3 rounded-lg bg-gradient-to-r from-amber-600 to-rose-600 text-white font-semibold hover:shadow-lg transition-shadow">Open Email Draft</button>
+        </motion.form>
 
         {/* Social Links */}
         <motion.div 

@@ -20,8 +20,11 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '#' },
     { name: 'About', href: '#about' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Highlights', href: '#achievements' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Training', href: '#training' },
     { name: 'Education', href: '#education' },
     { name: 'Contact', href: '#contact' }
   ];
@@ -105,6 +108,14 @@ const Navbar = () => {
                 </a>
               </motion.div>
             ))}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-amber-600 to-rose-600 rounded-lg hover:shadow-md transition-all"
+            >
+              Resume
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -166,6 +177,9 @@ const Navbar = () => {
                     </a>
                   </motion.div>
                 ))}
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="block px-6 py-3 text-base font-semibold text-amber-700 hover:bg-amber-50">
+                  Resume
+                </a>
               </div>
             </motion.div>
           )}

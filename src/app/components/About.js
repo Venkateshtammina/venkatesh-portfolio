@@ -18,21 +18,21 @@ export default function About() {
           
           <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
             <p>
-              I'm a passionate <span className="font-semibold text-amber-700">AI & ML Engineer</span> and <span className="font-semibold text-rose-600">Full-Stack Developer</span> with a degree in Computer Science from KSIT, Bengaluru. I specialize in building intelligent systems and crafting beautiful, user-centric web experiences.
+              I'm a <span className="font-semibold text-amber-700">Data Analytics and Engineering Apprentice</span> at <span className="font-semibold text-rose-600">Fidelity Business Services India</span>. I use SQL, Python, Snowflake, and Tableau to build dependable data solutions that turn complex information into meaningful insights.
             </p>
             
             <p>
-              My journey in technology started with a curiosity about how things work, which evolved into a passion for creating solutions that make a difference. I thrive on solving complex problems and turning ideas into reality through clean, efficient code.
+              My work spans data governance, automation, and analytics—from identifying PII and storage inefficiencies to improving dashboard visibility for data stewardship teams. I enjoy creating scalable, high-quality solutions that support confident, data-driven decisions.
             </p>
             
             <div className="pt-4">
               <h3 className="text-xl font-semibold text-slate-800 mb-3">What drives me:</h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {[
-                  'Building intelligent systems that learn and adapt',
-                  'Creating seamless user experiences',
-                  'Solving real-world problems with technology',
-                  'Staying updated with the latest tech trends'
+                  'Building reliable, governed data solutions',
+                  'Automating data-quality and audit workflows',
+                  'Transforming metadata into actionable insights',
+                  'Exploring modern analytics engineering tools'
                 ].map((item, index) => (
                   <motion.li 
                     key={index}
@@ -54,7 +54,7 @@ export default function About() {
             </div>
             
             <p className="pt-4">
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge with the developer community.
+              Outside of work, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the data and developer community.
             </p>
           </div>
         </motion.div>

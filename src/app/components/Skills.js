@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { FiCode, FiLayers, FiTool, FiCpu, FiDatabase, FiServer } from 'react-icons/fi';
+import { FiCode, FiTool, FiDatabase, FiBarChart2, FiCloud } from 'react-icons/fi';
 import SectionContainer from './SectionContainer';
 
 const SkillItem = ({ name, index }) => {
@@ -49,25 +49,26 @@ const SkillsSection = ({ category, icon: Icon, skills }) => (
 export default function Skills() {
   const skillCategories = [
     {
-      category: "Languages",
+      category: "Languages & Data",
       icon: FiCode,
       skills: [
-        { name: "Java" },
         { name: "Python" },
-        { name: "C/C++" },
-        { name: "SQL" }
+        { name: "SQL" },
+        { name: "Snowflake SQL" },
+        { name: "Snowflake Scripting" },
+        { name: "Java" }
       ]
     },
     {
-      category: "Web Development",
-      icon: FiLayers,
+      category: "Analytics & Governance",
+      icon: FiBarChart2,
       skills: [
-        
-      
-        
-      { name: "HTML5/CSS3" },
-      { name: "Node.js" },
-      { name: "RESTful APIs" },
+      { name: "Tableau" },
+      { name: "Excel" },
+      { name: "Data Lineage" },
+      { name: "Data Governance" },
+      { name: "Alation" },
+      { name: "Confluence" },
       ]
     },
     
@@ -75,20 +76,32 @@ export default function Skills() {
       category: "Database",
       icon: FiDatabase,
       skills: [
-        
-        { name: "PostgreSQL" },
-        { name: "MySQL" }
-        
+        { name: "Snowflake" },
+        { name: "Snowflake Tracking Tables" },
+        { name: "Data Quality" },
+        { name: "PII Discovery" }
       ]
     },
     {
-      category: "DevOps & Tools",
+      category: "Tools & Automation",
       icon: FiTool,
       skills: [
         { name: "Git & GitHub" },
-        
-  
-      
+        { name: "Jenkins" },
+        { name: "Control-M" },
+        { name: "Jupyter Notebook" },
+        { name: "VS Code" }
+      ]
+    },
+    {
+      category: "Libraries & Cloud",
+      icon: FiCloud,
+      skills: [
+        { name: "Pandas" },
+        { name: "NumPy" },
+        { name: "Matplotlib" },
+        { name: "Scikit-Learn" },
+        { name: "AWS" }
       ]
     }
   ];
@@ -112,7 +125,7 @@ export default function Skills() {
             transition={{ delay: 0.1 }}
             className="text-lg text-slate-600 max-w-3xl mx-auto"
           >
-            A comprehensive overview of my technical expertise across various domains of software development.
+            A focused toolkit for data analytics, engineering, governance, and automation.
           </motion.p>
         </div>
 
