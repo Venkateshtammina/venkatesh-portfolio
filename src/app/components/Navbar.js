@@ -177,7 +177,7 @@ const Navbar = () => {
                     </a>
                   </motion.div>
                 ))}
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="block px-6 py-3 text-base font-semibold text-amber-700 hover:bg-amber-50">
+                <a href="/Venky_fidelity.pdf" target="_blank" rel="noopener noreferrer" className="block px-6 py-3 text-base font-semibold text-amber-700 hover:bg-amber-50">
                   Resume
                 </a>
               </div>
