@@ -109,7 +109,7 @@ const Navbar = () => {
               </motion.div>
             ))}
             <a
-              href="/resume.pdf"
+              href="/Venky_fidelity.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2 px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-amber-600 to-rose-600 rounded-lg hover:shadow-md transition-all"
