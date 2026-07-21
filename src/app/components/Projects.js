@@ -146,7 +146,7 @@ const projects = [
         tech: ["MongoDB", "Express", "React", "Node.js", "JWT"],
         images: ["/medtrack_main.png"],
         githubLink: "https://github.com/Venkateshtammina/MedTrack-frontend",
-        liveLink: "https://medtrack-frontend.onrender.com",
+        liveLink: "https://medtrack-frontend-n2t5.vercel.app/",
         color: "from-amber-500 to-orange-500",
     },
     {
